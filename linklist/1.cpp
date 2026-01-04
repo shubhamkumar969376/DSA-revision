@@ -19,11 +19,11 @@ Node* arrayToLinkedList(int arr[], int n) {
     Node* temp = head;
 
     for (int i = 1; i < n; i++) {
-        temp->next = new Node(arr[i]); // create new node
-        temp = temp->next;             // move pointer
+        head->next = new Node(arr[i]); // create new node
+        head = head->next;             // move pointer
     }
 
-    return head;
+    return temp;
 }
 void printLinkedList(Node* head) {
     while (head != NULL) {

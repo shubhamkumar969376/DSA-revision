@@ -29,7 +29,7 @@ int Nqueen(int level) {
 }
 
 int main() {
-    cin >> n;
+   // cin >> n;
+   n=4;
     cout << Nqueen(0) << endl;
 }
-// This code solves the N-Queens problem using backtracking. It counts the number of ways to place n queens on an n x n chessboard such that no
